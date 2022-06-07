@@ -7,7 +7,9 @@ module.exports = {
     mode: "development",
     devServer: {
         open: true,
-        watchFiles: ["./src/**/*", "../app_package/lib/**/*"]
+        watchFiles: ["./src/**/*", "../app_package/lib/**/*"],
+        port: 3000,
+        host: '0.0.0.0'
     },
     output: {
         path: path.resolve(__dirname, "../docs"),
